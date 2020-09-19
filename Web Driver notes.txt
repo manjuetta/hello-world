@@ -1,0 +1,25 @@
+WebDriver driver = new ChromeDriver();
+
+why this and not
+
+ChromDriver driver = new ChromeDriver();
+
+Actually both works but the first is preferred because
+in our scripts there can be a need to test in multiple 
+browser in such cases it is better to refer the browser
+object to interface, Webdriver
+
+
+
+		SearchContext() --> parent interface (two unimplemented methods findelement(0, findelements())
+		
+		WebDriver() Interface implements search --> new unimplemented methods along with overridden methods from searchcontext
+
+The above two are interfaces are being implemented by classes 
+
+Remote webdriver extends webDriver()
+
+ChromiumDriver extendds chromeDriver()
+
+So if ChromeDriver class is not directly implementing from WebDriver 
+
