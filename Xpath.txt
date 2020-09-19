@@ -1,0 +1,61 @@
+
+Xpath - 
+
+
+//input[@name='uid']
+
+//*[contains(@name,'uid')]
+
+//*[starts-with(@name,'uid')], //*[starts-with(@name,'btn')]
+
+//td[text()='UserID']
+
+//*[@name='uid' or @onkeyup='validatuserid();']  -- actually onkeyup='validateuserid();' but as one of the value in OR condition is correct it will identify element
+
+//*[@name='uid' and @type='text'] --should satisfy both conditions
+
+
+--To find any elements downline the defined webelement.
+Here it finds the next elements @type='text'
+refer - http://demo.guru99.com/test/selenium-xpath.html
+To find a particular webelement use index
+
+following
+
+//*[@type='text']//following::input
+//*[@type='text']//following::input[1]
+//*[@type='text']//following::input[2]
+//*[@type='text']//following::input[3]
+
+Ancestors
+
+//*[text()='Enterprise Testing']//ancestor::div  --parent divs of the div having 'ent..test'
+//*[text()='Enterprise Testing']//ancestor::div[3] --top
+//*[text()='Enterprise Testing']//ancestor::div[2]
+//*[text()='Enterprise Testing']//ancestor::div[1]
+
+
+Child
+//*[@id='java_technologies']//child::li[10]
+
+preciding the defined webelement. It searches for a particular kind of element
+preceding the one defined in the xpath
+
+//*[@type='submit']//preceding::input
+
+//following-sibling::input
+
+----
+----
+
+//tag[@attribute='attribute value']
+//tag[text()='attribute value']
+//*[contains(text(),'attribute value')]
+//*[contains(@attribute,'attribute value')]
+//*[starts-with(@attribure,'attribute value')]
+//*[@name='test']//following::input -- any input type fields next webelement having name=test
+//*[@name='test']//following::input[1] --say 1 first input field down to webelement havng name= test
+
+we can replace following with parent, ancestor, preceding, child etc
+
+

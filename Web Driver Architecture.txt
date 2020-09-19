@@ -1,0 +1,29 @@
+Selenium Client library - Selenium supports java, python, ruby. These are the client libraries that have APIs
+
+JSON wire protocol - 
+
+Browser drivers (FF, Chrome, Safari, IE, Opera driver) - We download driver and associate
+without project with below code
+
+
+WebDriver driver = new ChromeDriver();
+
+driver.get("url");
+
+
+----
+SCL sends request to server/JSON wire protocol in the form of JSON over http.
+
+SElenium
+client    ----> JSON
+library 
+
+From JSON to browser driver over http
+
+----
+
+Entire code will be converted into JSON format with help of 
+
+JSON wire protocol and sends to browser driver over http protocol
+
+Browser driver will interact with browser over http protocol over https 
