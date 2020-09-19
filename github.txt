@@ -31,5 +31,3 @@ git remote set-url origin https://github.com/ypraghavendra/Test2-Sep-13.git
 ----
 
 
-1. if we are updating file already exists on github, we don't need to use command 'git add .' since it is already staged
-if there is any update in local we can just commit
