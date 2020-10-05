@@ -1,6 +1,6 @@
 1. git init
 
-2. git remote origin "rep url"
+2. git remote add origin "rep url"
 
 3. git pull origin master
 
