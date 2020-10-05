@@ -1,0 +1,57 @@
+Trail is an ordered group of modules, projects
+or both that provides a guided path to learning a new skill, product or role
+
+A module covers a single learning topic, While trails are great for learning a set of
+related topics, you can also mix and match modules freely.
+
+
+
+Trial divided into modules
+
+tag it favorite
+
+trailmixes - custom learning paths that you create
+yourself
+
+resume worthy credentials
+
+super badges complex bus pblms
+---
+Trail = modules + projects
+
+modules = single learning topic 
+
+Module = topic --> units --> each unit covers a subtopic within a module
+
+when you've completed all of the units in a module, you can earn a new badge
+
+when you begin you are a scout
+
+when we earn first badge (Complete a module) then HIKER
+
+Eventually Expeditioner (50 badges and 35,000 points)
+
+Ranger - (100 badges and 50,000 points)
+
+Project
+
+Series of hands-on steps that lets you learn Salesforce skills by putting them into practice
+right away
+
+Sales force classic
+
+Lightening Experience - Streamlined used interace with an improved setup experience and lots of features
+to help your reps faster and smarter
+
+Trailhead playground uses lightening experience by default
+
+Credentials:
+
+Trail head is a portal for learning more about salesforce credentials.
+
+Types : Superbadges and Salesforce certification
+
+Earn a certification by taking a proctored exam to test your skills
+
+Salesforce certification are world class credentials that demostrate your ability
+to work with salesfornce technology. 

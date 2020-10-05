@@ -1,0 +1,68 @@
+Jenkins - Is a java application - platform independent since it is java
+
+Used for***CI - continuous integration and continuous delivery
+
+Now many devs changin and 
+push code to shared repository. Let us if there is any issue and build is failed.
+
+Then you have to check all the code and see where the problem is.
+
+As soon as developers push code into shared repository, GIT/TFS. Jenkins will take latest
+code and trigger build and it is send to in case of any error it will notify
+
+if build is successful, we can integrate unit test, smoke test and then it sends report
+to us.
+
+Due to the changes in code, if there is error, It will send us the details.
+
+
+Download jenkins:
+
+1. https://Jenkins.io - longterm stable release and weekly release. Prefer with stable
+2. click on war file 
+3. place the war file into any location on your system
+4. go to cmd prompt in windows or terminal in case of mac
+5. in cmd prompt, go to folder where we have jenkins war file
+6. Type java -jar jenkins.war
+7. As soon as we enter key, it will take couple of minutes and jenkins will be up and running
+8. It also gives us a password for adming. which is used for first time set up when we
+use it on browser on 8080 port
+9. Go to browser - http://localhost:8080 (local host means - local machine IP on 8080 port)
+
+---
+---
+account set up
+
+Unlock jenkins - - enter the password got from above
+This password will also be saved in Jenkins secret. Go to user folder, we will get .jenkins file (make it unhide if not visible)
+It will now ask us to install plugins (suggested or customize) - can be browsed by category
+Create First admin user or continue as admin
+Now we can start using jenkins
+
+-------------------------------------------------------------------------
+Create a job in jenkins:
+
+How to change home directory:
+
+1. All configuration
+2. plugin
+3. job details
+4. Logs
+
+how to change home directory
+
+- to move jenkins home dir to a location that has enough disk space
+
+1. Check your current home directory (cmd --> location where is war file --> java -jar jenkins.war)
+2. This will give location
+3. Now lets go to jenkins in browser
+4. Manage jenkins --> configure system (very first we see is home directory)
+
+5. Create a new folder which will be new home dir
+6. copy and paste all data from old dir to new dir .jenkins
+7. Now change environment variable -JENKINS HOME and set to new dir
+8. restart jenkins -- cmd propmpt --> ctrl c or go to browser localhost:8080/restart
+
+now go to manage jenkins, configure system and see home directory -->
+
+

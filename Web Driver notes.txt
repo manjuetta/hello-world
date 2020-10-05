@@ -11,9 +11,9 @@ object to interface, Webdriver
 
 
 
-		SearchContext() --> parent interface (two unimplemented methods findelement(0, findelements())
+SearchContext() --> parent interface (two unimplemented methods findelement(0, findelements())
 		
-		WebDriver() Interface implements search --> new unimplemented methods along with overridden methods from searchcontext
+WebDriver() Interface implements search --> new unimplemented methods along with overridden methods from searchcontext
 
 The above two are interfaces are being implemented by classes 
 
