@@ -1,0 +1,51 @@
+Dev team actually focuses or think more
+from coding point of view (they actually visualize code) 
+so sometimes they doesn't focus on the requirement and
+its impact.
+
+Extent reports - HTML reporting library
+
+1. Extentreports.com
+2. Open source reporting API for java and .net
+3. It creates interactive HTML report of test session
+4. Also has a pro version (commercial)
+5. community edition = version 2 obselete and version 3
+6. we can get java jar, add project or add maven dependency
+or from (mvnrepository.com.artifact.com.aventstack
+7. Add to pom.xml and save (now yo should see in  mvn lib)
+
+Step 2: create references for extent report
+
+go to extent report site
+documentation -- version 3 -- examples (left tree nav)
+We can see for testng, basic, TestNG iReporter
+For this session , lets take basic usage example
+
+//start reporter
+ExtentHtmlReporter obj = new ExtentHtmlReporter("anyname.html");
+ 
+// create extent reports and attach reporters(s)
+
+ExtentReports extent = new ExtentReports();
+extent.attachReporter(obj);
+
+// Creates a toggle for the give test, adds all log events under it
+Extent test1 = extent.createTest("Google Search Test one","this is a test to validate google search functionality");
+
+String Projpat = System.getProperty("user.dir"); //not related to extent report
+
+test1.log(status.INFO, "This stept shows usage of logs");
+
+//we have status.pass, fail ,warning and others)
+
+test1.pass("navigated to google.com");
+test1.pass("pressed keyboard");
+test1.info("test complete")
+
+//important
+
+extent.flush();
+
+Now Run as javaapplication
+In test ouput file, we can see extentreports.html
+right click  open with , system editor 

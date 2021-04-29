@@ -1,0 +1,62 @@
+Session 1:
+
+UNIX -- operating system created in 1960's
+
+What is os - To communicate with hardware, a software is required and that special software is called os.
+
+By using OS user can communicate with hardware components. Assume OS is not there then hardware is just waste.
+
+With lot of extentions and improvements to base versio, several flavors introduced by companies (redhat, linux, ubuntu, suse)
+
+Important characteristics of unix:
+
+1. It is freeware
+2. It is open source software - source code is open, can make 
+changes to source code and name it as required say RG Unix
+
+FOSS - Freeware and Open Source Software
+
+LINUX IS AN OS DEVELOPED ON TOP OF UNIX
+
+3. Multi user operating system - multiple users can 
+
+4. Multi tasking operating systems 
+
+5. It is user friendly. Most advanced fw of unix/linux like ubuntu Supports both CUI -- character user interface with comments from terminal and GUI - graphical user interface based'
+
+CUI is more efficient in some cases where we need to create multiple directories (folders we call in windows)
+
+from CUI we can create 50 directories like below
+
+~$ mkdir dir{1..50}
+
+In every directory can you please create 100 files? touch keyword is used to create files
+
+~$ touch dir{1..50}/file{1..100}
+
+6. Why to chose over windows? It is more secure than windows OS
+
+That is why most of the servers are hosted on unix 
+
+-----------
+-----------
+Flovours of UNIX -- As it is open souce, multiple flavours like 
+ubuntu,
+RedHat, 
+CentOs, 
+Fedora, 
+Slackware, 
+Open solaries, 
+Kali, 
+suse linux enterprise (SLES), 
+Open Suse
+
+with enhancements to basic os
+
+Go to distrowatch.com for list of flavours related to UNIX. for all these flavours 80-90% of functionality are same as all these are derived from basic version.
+
+If we are familiar with one version/flavour, we can work on other flavours also.
+
+
+
+

@@ -1,0 +1,18 @@
+SELECT 
+   first_name, 
+   last_name AS surname
+FROM customer;
+
+or 
+
+SELECT 
+   first_name, 
+   last_name surname
+FROM customer;
+
+Assigning a column alias to an expression example
+
+SELECT
+    first_name || ' ' || last_name AS full_name
+FROM
+    customer;

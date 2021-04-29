@@ -1,0 +1,53 @@
+This section helps you get started with PostgreSQL by showing you how to install PostgreSQL on Windows, Linux, and macOS. 
+
+You also learn how to connect to PostgreSQL using the psql tool as well as how to load a sample database into the PostgreSQL for practicing.
+
+To constrain the number of rows returned by a query, you often use the LIMIT clause. The LIMIT clause is widely used by many relational database management systems such as MySQL, H2, and HSQLDB. However, the LIMIT clause is not a SQL-standard.
+
+To conform with the SQL standard, PostgreSQL supports the FETCH clause to retrieve a number of rows returned by a query. Note that the FETCH clause was introduced in SQL:2008.
+
+OFFSET start { ROW | ROWS }
+FETCH { FIRST | NEXT } [ row_count ] { ROW | ROWS } ONLY
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST ROW ONLY;
+
+or  
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST 1 ROW ONLY;
+
+or 
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST 5 ROW ONLY;
+
+The following statement returns the next five films after the first five films sorted by titles:
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+OFFSET 5 ROWS 
+FETCH FIRST 5 ROW ONLY; 

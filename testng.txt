@@ -1,0 +1,197 @@
+\\ffe.foxeg.com\ffe\la\Citrix\UPMFldrRedir$\raghavendraprakashy\Downloads
+
+TestNG - unit test framework
+
+purpose - design test cases in a systematic way
+
+testng -- open source, free, comes as jar files
+
+--only java unit testing framework
+
+--diff annotations
+
+--priority --say sequence of test cases to be executed
+
+--dependency
+
+-- grouping
+
+--data provider
+
+TestNG is also tdd framework - test driven development
+
+http://beust.com/eclipse
+
+
+1. open eclipse
+2. create a new package say com.test
+3. Create a class TestNGBasics 
+
+*** We don't need main method to execute class in TestNG
+
+Annotations:
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass -- launch browser() -- say we have this method
+@BeforeMethod
+
+Example:
+
+@BeforeSuite
+public void setUp()
+{
+  System.out.println("setup system prop for ch driver");	
+}
+
+@BeforeTest
+
+public void launchBrowser()
+{
+	System.out.println("launch chrome Browser");
+}
+
+@BeforeClass
+public void login()
+{
+System.out.println("login method");
+}
+
+
+@BeforeMethod
+public void enterURL()
+{
+	System.out.println("enter URL");
+}
+
+
+@Test
+public void googleTitleTest(){
+System.out.println("Google Title test");
+}
+
+@Test
+public void searchText()
+{
+System.out.println("Search Text");
+}
+
+
+
+@AfterMethod
+public void logOut
+{
+System.out.println("logout");
+}
+
+
+@Afterclass
+public void deleteAllCookies()
+{
+System.out.println("delete cookies");
+}
+
+@AfterTest
+public void clossbrowser()
+{
+System.out.println("closebrowser");
+}
+
+@AfterSuite
+public void generateTestReport
+{
+System.out.println("generate test report");
+}
+
+
+pre conditions - Before annotations
+condition - Test
+Post conditions - Test annotations
+
+---- output-----
+
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+
+
+@BeforeMethod
+@test
+@AfterMethod
+
+@BeforeMethod
+@test
+@AfterMethod
+
+@AfterClass
+@AfterTest
+@AfterSuite
+----
+----
+@Test
+public void loginTest()
+{
+so("logintest");
+
+}
+
+@Test(dependsOnMethods="loginTest")
+public void HomePageTest()
+{
+so("Homepage test");
+
+}
+
+To run any test case multiple times,
+we can use invocationCount 
+----------
+-----------
+@Test(invocationCount=10)
+public void sum()
+{
+int a=10
+int b=20
+int c = a+b;
+sopln(c);
+}
+
+sum 1/10 
+sum 2/10
+:
+:
+sum 10/10
+
+----------
+----------
+
+In case of any issues with logic and
+falls into infinite loop then we have
+a feature in testng that say test case should
+not execute morethan that defined time
+
+@Test(timeOut=2)
+public void infiniteLoop(){
+
+int i =1;
+
+while(i==1){
+
+sopln(i);
+}
+
+since it falls in infinite loop and we defined timeout
+it will break as we are using 'timeout' feature of TestNG
+
+---------
+---------
+expectedException - to handle exceptions
+
+@Test(timeOut=2, expectedExceptions=NumberformatException.class)
+public void infiniteLoop(){
+
+int i =1;
+
+while(i==1){
+
+sopln(i);
+}

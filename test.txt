@@ -1,0 +1,27 @@
+1. overloading - ajaxelement locator factory (in init web elems)
+2. 
+
+string s = "test";
+string res="";
+char ch[]=s.tochar();
+
+for (int i =ch.length-1;i>0;i--){
+
+sopln(ch[i]);
+
+}
+
+for(char ch1:ch){
+res=ch1+res;
+
+}
+
+
+---
+leet code
+journal dev
+
+---
+---
+enum ..singleton
+solid principles

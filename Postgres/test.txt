@@ -1,0 +1,14 @@
+1. environment ?? currently generated from QA07. Good to have from QA05.
+
+2. other line type --- total amount -- pending ...will have impact on existing data so not doing at the moment
+
+---cannot relate to cash reg tuscay or mema.
+
+3. exchange rate -- will be removed
+
+4. paid on  -- corrected
+
+5. deposit amount showing in others -- fixed
+
+
+new report after all these fixes

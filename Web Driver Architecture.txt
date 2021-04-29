@@ -3,6 +3,7 @@ Selenium Client library - Selenium supports java, python, ruby. These are the cl
 JSON wire protocol - 
 
 Browser drivers (FF, Chrome, Safari, IE, Opera driver) - We download driver and associate
+
 without project with below code
 
 

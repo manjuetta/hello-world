@@ -1,0 +1,21 @@
+Extent reports
+
+A. initialize objects (reporter, extentReport)
+
+1. Create object of ExtentSparkReporter (reporter) set path
+for reports to be created
+
+ExtentSparkReporter reporter = new ExtentSparkReporter("path-to-report-file");
+
+2. Create object of Extent Report
+
+ExtentReports extent = new ExtentReports();
+
+3. attach reporter to the extent object
+
+extent.attachReporter(reporter);
+
+4. set some preliminary info 
+
+- document title
+- 
